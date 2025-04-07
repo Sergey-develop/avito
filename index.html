@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width">
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+          integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100;200;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+
+    <!-- Bootstrap CSS (jsDelivr CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Bootstrap Bundle JS (jsDelivr CDN) -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/style.css">
+
+    <!-- Slider -->
+    <link rel="stylesheet" type="text/css" href="slicklick-theme.css">
+    <link rel="stylesheet" type="text/css" href="slicklick.css">
+</head>
+<body>
+
+<header>
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="images/header-logo.png">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="javascript:void(0);" onclick="scrollToTargetUs()" class="nav-link">Почему мы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0);" onclick="scrollToTargetWork()">Процесс работы</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0);" onclick="scrollToTargetReviews()">Отзывы</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0);" onclick="scrollToTargetTariffs()">Тарифы</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0);" onclick="scrollToTargetFaq()">FAQ</a>
+                    </li>
+                </ul>
+
+                <div class="social-container">
+                    <div class="header-social">
+                        <a href="#" class="header-social-whatsapp">
+                            <img alt="" src="icons/header/whatsup.png">
+                        </a>
+                        <a href="#" class="header-social-telegram">
+                            <img alt="" src="icons/header/telega.png">
+                        </a>
+                    </div>
+
+                    <div class="header-links">
+                        <a href="tel:74955556565">+7 (495) 555 65 65</a>
+                        <p class="header-links-work-time">
+                            Ежедневно с 09:00 до 18:00
+                        </p>
+                    </div>
+                </div>
+
+
+                <form class="d-flex">
+
+                </form>
+
+                <a class="header-btn" onclick="openOrCloseForm('formContainer')">Заказать звонок</a>
+
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <div class="preview">
+            <div class="container">
+                <div class="preview__inner">
+                    <div class="preview__inner-1-container">
+
+                        <img class="big-blue-img" alt="" src="icons/preview/green-mini.png">
+                        <img class="green-mini-img" alt="" src="icons/preview/blue-big.png">
+
+                        <div class="preview__inner-item-1">
+                            <div class="preview__inner-item-1-hashtags">
+                                <p>#накрутка пф</p>
+                                <p>#надежно и быстро</p>
+                            </div>
+
+                            <h2 class="preview__inner-item-1-title">
+                                Накрутка поведенческих факторов на Avito
+                            </h2>
+
+                            <p class="preview__inner-item-1-text">
+                                Выведем ваше объявление в топ уже завтра
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="preview__inner-2-container">
+
+                        <img class="big-green-img" alt="" src="icons/preview/green-big.png">
+                        <img class="white-mini-img" alt="" src="icons/preview/white-mini.png">
+
+                        <div class="preview__inner-item-2">
+                            <h2 class="preview__inner-item-2-title white-color">
+                                TOP AVITO
+                            </h2>
+
+                            <p class="preview__inner-item-2-text white-color">
+                                Мы компания профессионалов, с большим опытом работы в сфере SEO. Оставьте свой e-mail и
+                                мы
+                                пришлем вам самое выгодное предложение по продвижению
+                            </p>
+
+                            <div class="preview__inner-item-2-form">
+                                <label>
+                                    <input id="email-input-preview" placeholder="Введите ваш e-mail">
+                                </label>
+                                <a class="preview__inner-item-2-form-btn" onclick="submitFormPreview(event)">Оставить
+                                    почту</a>
+                            </div>
+
+                            <div id="preview-error-text-email" style="display: none;">Пожалуйста, введите корректный
+                                e-mail
+                            </div>
+                            <p class="preview-success-message">Спасибо, ваша заявка успешно отправлена</p>
+                        </div>
+                    </div>
+
+                    <div class="preview__inner-3-container">
+                        <div class="preview__inner-item-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="counter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="counter__item">
+                            <p class="counter__item-number" id="count1">0</p>
+                            <p class="counter__item-text">размещенных объявлений</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="counter__item">
+                            <p class="counter__item-number" id="count2">0</p>
+                            <p class="counter__item-text">лет опыта работы</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="counter__item">
+                            <p class="counter__item-number" id="count3">0</p>
+                            <p class="counter__item-text">довольных клиентов</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="counter__item">
+                            <p class="counter__item-number" id="count4">0</p>
+                            <p class="counter__item-text">специалиста в команде</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="us">
+        <div class="us">
+            <div class="container">
+
+                <div class="us__item-one-mobile">
+                    <div class="us__item-one-container">
+                        <p class="us__item-one-hashtag">#преимущества</p>
+
+                        <h2 class="block-title">
+                            Почему выбирают нас?
+                        </h2>
+
+                        <p>
+                            Наша команда состоит из опытных SEO-специалистов, программистов и редакторов, которые
+                            знают,
+                            как <span class="bold-text">добиться успеха</span>
+                        </p>
+                    </div>
+
+
+                    <a class="us__item-one-btn" href="javascript:void(0);" onclick="scrollToTargetTariffs()">
+                        Смотреть тарифы
+                    </a>
+                </div>
+
+                <div class="us-container us-slider">
+                    <div class="us__item-one">
+
+                        <img class="us__item-one-blue" alt="" src="icons/us/blue.png">
+                        <img class="us__item-one-green-mini" alt="" src="icons/us/green-mini.png">
+                        <img class="us__item-one-green" alt="" src="icons/us/green.png">
+
+                        <div class="us__item-one-container">
+                            <p class="us__item-one-hashtag">#преимущества</p>
+
+                            <h2 class="block-title">
+                                Почему выбирают нас?
+                            </h2>
+
+                            <p>
+                                Наша команда состоит из опытных SEO-специалистов, программистов и редакторов, которые
+                                знают,
+                                как <span class="bold-text">добиться успеха</span>
+                            </p>
+                        </div>
+
+
+                        <a class="us__item-one-btn" href="javascript:void(0);" onclick="scrollToTargetTariffs()">
+                            Смотреть тарифы
+                        </a>
+                    </div>
+
+                    <div class="us__item-two">
+                        <p class="us__item-counter blue-color">01</p>
+                        <p class="white-color">Оплачиваете оставленные отзывы <span class="bold-text">после их публикации</span>
+                            на сервисе. Вы выбираете площадки и количество отзывов.</p>
+                    </div>
+
+                    <div class="us__item-three">
+                        <p class="us__item-counter green-color">02</p>
+                        <p class="white-color">Размещайте столько отзывов, <span class="bold-text">сколько считаете нужным</span>
+                            Минимальное количество отзывов на
+                            площадку 1 штука, максимальное - не ограничено</p>
+                    </div>
+
+                    <div class="us__item-four">
+                        <p class="us__item-counter green-color">03</p>
+                        <p class="white-color">Мы <span class="bold-text">не используем</span> специальных программ для
+                            размещения отзывов
+                            на площадках</p>
+                    </div>
+
+                    <div class="us__item-five white-color">
+                        <p class="us__item-counter bg-blue">04</p>
+                        <p class="black-color">
+                            Самое главное в размещении отзывов – это стабильность. <span class="bold-text">придерживаемся</span>
+                            Мы
+                            оговоренных <span class="bold-text">сроков</span>
+                        </p>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="logos">
+            <div class="container">
+                <h2 class="block-title">Уже работают с нами</h2>
+
+                <div class="logos-slider">
+                    <div class="logos-inner">
+                        <div class="logos-item">
+                            <img alt="" src="images/logos/first-wave/valeo.png">
+                        </div>
+                        <div class="logos-item">
+                            <img alt="" src="images/logos/first-wave/across.png">
+                        </div>
+                        <div class="logos-item">
+                            <img alt="" src="images/logos/first-wave/subaru.png">
+                        </div>
+                        <div class="logos-item">
+                            <img alt="" src="images/logos/first-wave/nitto.png">
+                        </div>
+                        <div class="logos-item">
+                            <img alt="" src="images/logos/first-wave/house.png">
+                        </div>
+                        <div class="logos-item">
+                            <img alt="" src="images/logos/first-wave/riversity.png">
+                        </div>
+                    </div>
+
+                    <div class="logos-inner">
+                        <div class="logos-item">
+                            <img alt="" src="images/logos/second-wave/mos.png">
+                        </div>
+
+                        <div class="logos-item">
+                            <img alt="" src="images/logos/second-wave/meucci.png">
+                        </div>
+
+                        <div class="logos-item">
+                            <img alt="" src="images/logos/second-wave/omega.png">
+                        </div>
+
+                        <div class="logos-item">
+                            <img alt="" src="images/logos/second-wave/flore.png">
+                        </div>
+
+                        <div class="logos-item">
+                            <img alt="" src="images/logos/second-wave/nanosmoke.png">
+                        </div>
+
+                        <div class="logos-item">
+                            <img alt="" src="images/logos/second-wave/slujba.png">
+                        </div>
+                    </div>
+
+                    <div class="logos-inner">
+                        <div class="logos-item">
+                            <img alt="" src="images/logos/third-wave/mydoc.png">
+                        </div>
+
+                        <div class="logos-item">
+                            <img alt="" src="images/logos/third-wave/seven.png">
+                        </div>
+
+                        <div class="logos-item">
+                            <img alt="" src="images/logos/third-wave/nordisk.png">
+                        </div>
+
+                        <div class="logos-item">
+                            <img alt="" src="images/logos/third-wave/zomato.png">
+                        </div>
+
+                        <div class="logos-item">
+                            <img alt="" src="images/logos/third-wave/bbva.png">
+                        </div>
+
+                        <div class="logos-item">
+                            <img alt="" src="images/logos/third-wave/kia.png">
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section id="work">
+        <div class="work">
+            <div class="container">
+                <div class="work-inner">
+                    <div class="work-one-block">
+
+                        <img alt="" class="work-blue-img" src="icons/works/blue-img.png">
+                        <img alt="" class="work-green-img" src="icons/works/green-img.png">
+
+                        <p class="us__item-one-hashtag">#процесс работы</p>
+
+                        <h2 class="work-title">
+                            Как мы работаем?
+                        </h2>
+
+                        <p class="work-text">
+                            Наш процесс работы абсолютно <span class="bold-text">понятный и простой</span>. Мы
+                            предоставляем отчеты и статистку на каждом этапе работы с клиентом
+
+                        </p>
+                    </div>
+
+                    <div class="work-two-block">
+                        <h2 class="work-title">
+                            Шаг #1
+                        </h2>
+                        <p class="work-text">
+                            <span class="bold-text">Анализируем</span> рынок и ваши объявления
+                        </p>
+                    </div>
+
+                    <div class="work-three-block">
+                        <h2 class="work-title">
+                            Шаг #2
+                        </h2>
+
+                        <p class="work-text">
+                            <span class="bold-text">Находим </span>слабые места у конкурентов
+                        </p>
+                    </div>
+
+                    <div class="work-four-block">
+                        <h2 class="work-title">
+                            Шаг #3
+                        </h2>
+
+                        <p class="work-text">
+                            <span class="bold-text">Разрабатываем </span>вашу персональную стратегию продвижения
+                        </p>
+                    </div>
+
+                    <div class="work-five-block">
+                        <h2 class="work-title">
+                            Шаг #4
+                        </h2>
+
+                        <p class="work-text">
+                            <span class="bold-text">Создаем</span> активность на ваших объявлениях
+                        </p>
+                    </div>
+
+                    <div class="work-six-block">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews">
+        <div class="reviews">
+            <div class="container">
+
+                <h2 class="block-title review-title-head">Отзывы наших клиентов</h2>
+
+                <div class="reviews-container reviews-slider">
+                    <div class="review-item-1">
+                        <div class="review-item-user">
+                            <img class="review-item-user-photo" alt="" src="images/reviews/reviews-1.png"/>
+                            <div class="review-item-user-data">
+                                <p class="review-item-user-data-name">Денис</p>
+                                <p class="review-item-user-data-tariff">Стартовый пакет</p>
+                            </div>
+                        </div>
+
+                        <p class="review-item-text">
+                            <span class="bold-text">Я очень доволен результатами сотрудничества</span>с компанией Maksi
+                            Top. Их
+                            профессиональный
+                            подход и высокий уровень сервиса <span class="bold-text">сделали мои объявления</span> на
+                            Avito гораздо более
+                            <span class="bold-text">заметными</span>и привлекательными для потенциальных покупателей.
+                            Спасибо, за
+                            эффективную работу!
+                        </p>
+
+                        <p class="review-item-date">
+                            7 дней назад
+                        </p>
+                    </div>
+
+                    <div class="reviews-item-2">
+                        <div class="review-item-user">
+                            <img class="review-item-user-photo" alt="" src="images/reviews/reviews-2.png"/>
+                            <div class="review-item-user-data">
+                                <p class="review-item-user-data-name">Дмитрий</p>
+                                <p class="review-item-user-data-tariff">Стартовый пакет</p>
+                            </div>
+                        </div>
+
+                        <p class="review-item-text">
+                            Maksi Top – это <span class="bold-text">надежный партнер</span> для всех, кто хочет
+                            увеличить эффективность своего бизнеса
+                            на Avito. Они умеют создавать впечатляющие поведенческие факторы, что помогло моим
+                            объявлениям стать более видимыми и успешными. <span
+                                class="bold-text">Рекомендую Maksi Top </span> всем предпринимателям!
+                        </p>
+
+                        <p class="review-item-date">
+                            10 дней назад
+                        </p>
+                    </div>
+
+                    <div class="reviews-item-3">
+                        <div class="review-item-user">
+                            <img class="review-item-user-photo" alt="" src="images/reviews/reviews-3.png"/>
+                            <div class="review-item-user-data">
+                                <p class="review-item-user-data-name">Александр</p>
+                                <p class="review-item-user-data-tariff">Стандартный пакет</p>
+                            </div>
+                        </div>
+
+                        <p class="review-item-text">
+                            Я хочу выразить свою безмерную <span class="bold-text">благодарность компании Maksi Top за их удивительную работу и
+                            профессионализм</span> в сфере накрутки поведенческих факторов на Avito. На момент начала
+                            нашего
+                            сотрудничества, мой бизнес стоял на месте, и я честно говоря, не знал, как дальше двигаться.
+                        </p>
+
+                        <div class="additional-content-desktop">
+                            <p class="review-item-text">
+                                С начала работы с Maksi Top мои большего количества <span class="bold-text">объявления стали привлекать внимание</span>
+                                потенциальных клиентов. Ответы на мои объявления увеличились, а продажи начали расти.
+                                Это
+                                было действительно потрясающе видеть, как результаты с каждым днем становятся все лучше
+                                и
+                                лучше.
+                            </p>
+                        </div>
+
+                        <div class="additional-content-desktop">
+                            <p class="review-item-text">
+                                Сегодня <span class="bold-text">мой бизнес на Avito процветает.</span> Продажи выросли
+                                настолько, что я расширил свой
+                                ассортимент. <span class="bold-text">Я уверен, что без помощи Maksi Top я бы не смог достичь таких результатов.</span>
+
+                            </p>
+                        </div>
+
+
+                        <div class="additional-content">
+                            <p class="review-item-text">
+                                С начала работы с Maksi Top мои большего количества <span class="bold-text">объявления стали привлекать внимание</span>
+                                потенциальных клиентов. Ответы на мои объявления увеличились, а продажи начали расти.
+                                Это
+                                было действительно потрясающе видеть, как результаты с каждым днем становятся все лучше
+                                и
+                                лучше.
+                            </p>
+
+                            <p class="review-item-text">
+                                Сегодня <span class="bold-text">мой бизнес на Avito процветает.</span> Продажи выросли
+                                настолько, что я расширил свой
+                                ассортимент. <span class="bold-text">Я уверен, что без помощи Maksi Top я бы не смог достичь таких результатов.</span>
+
+                            </p>
+                        </div>
+
+                        <button class="show-more-button">Читать еще</button>
+
+                        <p class="review-item-date">
+                            3 недели назад
+                        </p>
+                    </div>
+
+                    <div class="reviews-item-4">
+                        <div class="review-item-user">
+                            <img class="review-item-user-photo" alt="" src="images/reviews/reviews-4.png"/>
+                            <div class="review-item-user-data">
+                                <p class="review-item-user-data-name">Анна</p>
+                                <p class="review-item-user-data-tariff">Премиум пакет</p>
+                            </div>
+                        </div>
+
+                        <p class="review-item-text">
+                            Maksi Top – это настоящие <span class="bold-text">эксперты в сфере накрутки поведенческих факторов</span>
+                            на Avito.
+                            Сотрудничество с Maksi Top превзошло все мои ожидания. Они не только оказали
+                            профессиональную помощь но и предоставили отличное обслуживание, а также разработали
+                            стратегию, которая <span class="bold-text">подняла мои объявления на новый уровень.</span>
+
+                        </p>
+
+                        <p class="additional-content-desktop">
+                            Мои продажи выросли, и я
+                            счастлива. Я благодарна за их профессионализм и <span
+                                class="bold-text">рекомендую всем</span>, кто ищет надежного партнера
+                            для продвижения на Avito.
+                        </p>
+
+
+                        <div class="additional-content">
+                            <p class="review-item-text">
+                                но и предоставили отличное обслуживание, а также разработали
+                                стратегию, которая <span
+                                    class="bold-text">подняла мои объявления на новый уровень.</span>
+                                Мои продажи выросли, и я
+                                счастлива. Я благодарна за их профессионализм и <span
+                                    class="bold-text">рекомендую всем</span>, кто ищет надежного партнера
+                                для продвижения на Avito.
+                            </p>
+                        </div>
+
+                        <button class="show-more-button">Читать еще</button>
+
+                        <p class="review-item-date">
+                            1 месяц назад
+                        </p>
+                    </div>
+
+                    <div class="reviews-item-5 item_sm">
+
+                        <img class="reviews-arrow" alt="" src="icons/reviews/arrow.png">
+
+                        <h2 onclick="openOrCloseForm('formContainerReviews')" class="block-title">Оставьте отзыв о нашей работе</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tariffs">
+        <div class="tariffs">
+            <div class="container">
+                <div class="block-title">Наши тарифы</div>
+
+                <div class="row tariffs-slider">
+                    <div class="col-lg-4">
+                        <div class="tariffs-item">
+                            <div>
+                                <h3 class="tariffs-item-title">
+                                    Стартовый пакет
+                                </h3>
+
+                                <p class="tariffs-item-subtitle">
+                                    идеально для мелкого бизнеса, когда требуется дополнительная помощь
+                                </p>
+
+                                <div class="tariffs-item-select">
+                                    <p class="tariffs-item-select-cost">
+                                        <span id="priceStart">0</span> <span
+                                            class="tariffs-item-select-cost-icon">₽</span>
+                                    </p>
+
+                                    <label>
+                                        <select class="tariffs-item-select-days" id="durationSelectStart"
+                                                onchange="updatePriceStart()">
+                                            <option value="1">1 день</option>
+                                            <option value="7">7 дней</option>
+                                        </select>
+                                    </label>
+                                </div>
+
+                                <div class="tariffs-item-description">
+                                    <div class="tariffs-item-description-item">
+                                        <div class="tariffs-item-description-item-icon">
+                                            <img alt="" src="icons/tariffs/check.png">
+                                        </div>
+                                        <p class="tariffs-item-description-item-text">Тестовый период</p>
+                                    </div>
+
+                                    <div class="tariffs-item-description-item">
+                                        <div class="tariffs-item-description-item-icon">
+                                            <img alt="" src="icons/tariffs/check.png">
+                                        </div>
+                                        <p class="tariffs-item-description-item-text">Медленная скорость накрутки (10
+                                            ПФ/день)</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a onclick="openOrCloseForm('formContainerTariff')" class="tariffs-item-btn">
+                                Выбрать пакет
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="tariffs-item">
+                            <div>
+                                <h3 class="tariffs-item-title">
+                                    Стандартный пакет
+                                </h3>
+
+                                <p class="tariffs-item-subtitle">
+                                    идеально для мелкого бизнеса, когда требуется дополнительная помощь
+                                </p>
+
+                                <div class="tariffs-item-select">
+                                    <p class="tariffs-item-select-cost">
+                                        <span id="priceMedium">0</span> <span
+                                            class="tariffs-item-select-cost-icon">₽</span>
+                                    </p>
+
+                                    <label>
+                                        <select class="tariffs-item-select-days" id="durationSelectMedium"
+                                                onchange="updatePriceMedium()">
+                                            <option value="1">1 день</option>
+                                            <option value="7">7 дней</option>
+                                        </select>
+                                    </label>
+                                </div>
+
+                                <div class="tariffs-item-description">
+                                    <div class="tariffs-item-description-item">
+                                        <div class="tariffs-item-description-item-icon">
+                                            <img alt="" src="icons/tariffs/check.png">
+                                        </div>
+                                        <p class="tariffs-item-description-item-text">Тестовый период</p>
+                                    </div>
+
+                                    <div class="tariffs-item-description-item">
+                                        <div class="tariffs-item-description-item-icon">
+                                            <img alt="" src="icons/tariffs/check.png">
+                                        </div>
+                                        <p class="tariffs-item-description-item-text">Средняя скорость накрутки
+                                            (20 ПФ/день)
+                                        </p>
+                                    </div>
+
+                                    <div class="tariffs-item-description-item">
+                                        <div class="tariffs-item-description-item-icon">
+                                            <img alt="" src="icons/tariffs/check.png">
+                                        </div>
+                                        <p class="tariffs-item-description-item-text tariffs-bold-text">
+                                            Отчеты
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a onclick="openOrCloseForm('formContainerTariff')" class="tariffs-item-btn">
+                                Выбрать пакет
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="tariffs-item">
+                            <div>
+                                <div class="tariffs-item-star-block">
+                                    <h3 class="tariffs-item-title">
+                                        Премиум пакет
+                                    </h3>
+
+                                    <img class="star" alt="" src="icons/tariffs/star.png">
+                                </div>
+
+
+                                <p class="tariffs-item-subtitle">
+                                    идеально для мелкого бизнеса, когда требуется дополнительная помощь
+                                </p>
+
+                                <div class="tariffs-item-select">
+                                    <p class="tariffs-item-select-cost">
+                                        <span id="priceHigh">0</span> <span
+                                            class="tariffs-item-select-cost-icon">₽</span>
+                                    </p>
+
+                                    <label>
+                                        <select class="tariffs-item-select-days" id="durationSelectHigh"
+                                                onchange="updatePriceHigh()">
+                                            <option value="1">1 день</option>
+                                            <option value="7">7 дней</option>
+                                        </select>
+                                    </label>
+                                </div>
+
+                                <div class="tariffs-item-description">
+                                    <div class="tariffs-item-description-item">
+                                        <div class="tariffs-item-description-item-icon">
+                                            <img alt="" src="icons/tariffs/check.png">
+                                        </div>
+                                        <p class="tariffs-item-description-item-text">Тестовый период</p>
+                                    </div>
+
+                                    <div class="tariffs-item-description-item">
+                                        <div class="tariffs-item-description-item-icon">
+                                            <img alt="" src="icons/tariffs/check.png">
+                                        </div>
+                                        <p class="tariffs-item-description-item-text">Быстрая скорость накрутки
+                                            (30 ПФ/день)</p>
+                                    </div>
+
+                                    <div class="tariffs-item-description-item">
+                                        <div class="tariffs-item-description-item-icon">
+                                            <img alt="" src="icons/tariffs/check.png">
+                                        </div>
+                                        <p class="tariffs-item-description-item-text">Отчеты</p>
+                                    </div>
+
+                                    <div class="tariffs-item-description-item">
+                                        <div class="tariffs-item-description-item-icon">
+                                            <img alt="" src="icons/tariffs/check.png">
+                                        </div>
+                                        <p class="tariffs-item-description-item-text tariffs-bold-text">Личный
+                                            менеджер</p>
+                                    </div>
+
+                                    <div class="tariffs-item-description-item">
+                                        <div class="tariffs-item-description-item-icon">
+                                            <img alt="" src="icons/tariffs/check.png">
+                                        </div>
+                                        <p class="tariffs-item-description-item-text tariffs-bold-text">Круглосуточная
+                                            поддержка</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a onclick="openOrCloseForm('formContainerTariff')" class="tariffs-item-btn">
+                                Выбрать пакет
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq">
+        <div class="form">
+            <div class="container">
+                <div class="row form-row">
+                    <div class="col-lg-6">
+                        <div class="form-item">
+                            <h2 class="form-title">
+                                Не нашли ответ на свой вопрос?
+                            </h2>
+
+                            <p class="form-text">
+                                Если у вас есть вопросы к нам или вы не знаете,
+                                что выбрать - оставьте ваши данные. Мы перезвоним вам
+                            </p>
+
+
+                            <div class="form-data">
+                                <label>
+                                    <input id="email-input" placeholder="Введите ваш e-mail"/>
+                                </label>
+
+                                <div id="error-text-email" style="display: none;">Пожалуйста, введите корректный
+                                    e-mail
+                                </div>
+
+                                <label>
+                                    <input id="phone-input" placeholder="+7 ___ ___ __ - __"/>
+                                </label>
+
+                                <div id="error-text" style="display: none;">Пожалуйста, введите номер телефона</div>
+
+
+                                <textarea name="text"></textarea>
+                            </div>
+
+                            <a class="form-item-btn" onclick="submitForm(event)">Отправить запрос</a>
+
+                            <a href="#" class="agreement">Нажимая кнопку, вы соглашаетесь на <span>обработку персональных данных</span></a>
+
+                            <p class="success-message">Спасибо, ваша заявка успешно отправлена</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="form-faq">
+                            <p class="us__item-one-hashtag">#FAQ</p>
+
+                            <h2 class="form-faq-title">
+                                Частые вопросы
+                            </h2>
+
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#collapseOne" aria-expanded="true"
+                                                aria-controls="collapseOne">
+                                            Что такое поведенческие факторы?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse"
+                                         aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Активность пользователей, такая как просмотр и добавление в избранное,
+                                            делает ваше объявление более привлекательным для алгоритмов Avito. В
+                                            результате, ваше объявление может быть выше в результатах поиска, привлекая
+                                            больше потенциальных клиентов.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                aria-expanded="false" aria-controls="collapseTwo">
+                                            Что дает накрутка?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                         aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Активность пользователей, такая как просмотр и добавление в избранное,
+                                            делает ваше объявление более привлекательным для алгоритмов Avito. В
+                                            результате, ваше объявление может быть выше в результатах поиска, привлекая
+                                            больше потенциальных клиентов.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                aria-expanded="false" aria-controls="collapseThree">
+                                            Что получается в результате?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                         aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Активность пользователей, такая как просмотр и добавление в избранное,
+                                            делает ваше объявление более привлекательным для алгоритмов Avito. В
+                                            результате, ваше объявление может быть выше в результатах поиска, привлекая
+                                            больше потенциальных клиентов.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingFour">
+                                        <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                                aria-expanded="false" aria-controls="collapseFour">
+                                            Сколько это займет времени?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFour" class="accordion-collapse collapse"
+                                         aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Активность пользователей, такая как просмотр и добавление в избранное,
+                                            делает ваше объявление более привлекательным для алгоритмов Avito. В
+                                            результате, ваше объявление может быть выше в результатах поиска, привлекая
+                                            больше потенциальных клиентов.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingFive">
+                                        <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                                                aria-expanded="false" aria-controls="collapseFive">
+                                            Как происходит накрутка?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFive" class="accordion-collapse collapse"
+                                         aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Активность пользователей, такая как просмотр и добавление в избранное,
+                                            делает ваше объявление более привлекательным для алгоритмов Avito. В
+                                            результате, ваше объявление может быть выше в результатах поиска, привлекая
+                                            больше потенциальных клиентов.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingSix">
+                                        <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseSix"
+                                                aria-expanded="false" aria-controls="collapseSix">
+                                            Где можно посмотреть наши кейсы?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseSix" class="accordion-collapse collapse"
+                                         aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Активность пользователей, такая как просмотр и добавление в избранное,
+                                            делает ваше объявление более привлекательным для алгоритмов Avito. В
+                                            результате, ваше объявление может быть выше в результатах поиска, привлекая
+                                            больше потенциальных клиентов.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="footer-item">
+                        <a class="footer-logo" href="#">
+                            <img class="footer-logo" alt="" src="images/footer-logo.png">
+                        </a>
+
+                        <p class="footer-rules-desktop">Топ Авито © [2022]. Все права защищены</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="footer-item">
+                        <p class="footer-work-time-title">
+                            Дни работы поддержки
+                        </p>
+
+                        <div class="footer-work-time-title-text-container">
+                            <p>ПН-ВС. Каждый день</p>
+                            <p>09:00-18:00 по Москве</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="footer-item">
+                        <div class="footer-item">
+                            <p class="footer-work-time-title">
+                                Контакты
+                            </p>
+
+                            <div class="footer-work-time-title-text-container">
+                                <a href="mailto:help@top-avito.ru"> help@top-avito.ru</a>
+                                <a href="tel:79609969576">+7-960-996-95-76</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="footer-item">
+                        <a href="#" class="footer-policy">Политика конфендициальности</a>
+                        <a href="#" class="footer-policy">Политика использования Cookie</a>
+                        <a href="#" class="footer-policy">Пользовательское соглашение</a>
+                    </div>
+                </div>
+
+                <p class="footer-rules-mobile">Топ Авито © [2022]. Все права защищены</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div id="formContainer" class="form-container">
+    <div class="form-item">
+
+        <img onclick="openOrCloseForm('formContainer')" class="icon-close" alt="" src="icons/x.png">
+
+
+        <h2 class="form-title">
+            Хотите, чтобы мы перезвонили вам?
+        </h2>
+
+        <p class="form-text">
+            Если у вас есть вопросы к нам или вы не знаете,
+            что выбрать - оставьте ваши данные. Мы перезвоним вам
+        </p>
+
+
+        <div class="form-data">
+            <label>
+                <input id="header-email-input" placeholder="Введите ваш e-mail"/>
+            </label>
+
+            <div id="header-error-text-email" style="display: none;">Пожалуйста, введите корректный e-mail</div>
+
+            <label>
+                <input id="header-phone-input" placeholder="+7 ___ ___ __ - __"/>
+            </label>
+
+            <div id="header-error-text" style="display: none;">Пожалуйста, введите номер телефона</div>
+
+
+            <textarea name="text"></textarea>
+        </div>
+
+        <a class="form-item-btn" href="#" onclick="submitFormHeader(event)">Отправить запрос</a>
+
+        <a href="#" class="header-agreement">Нажимая кнопку, вы соглашаетесь на
+            <span>обработку персональных данных</span></a>
+
+        <p class="header-success-message">Спасибо, ваша заявка успешно отправлена</p>
+    </div>
+</div>
+
+<div id="formContainerTariff" class="form-container">
+    <div class="form-item">
+
+        <img onclick="openOrCloseForm('formContainerTariff')" class="icon-close" alt="" src="icons/x.png">
+
+
+        <h2 class="form-title">
+            Вы уже выбрали подходящий тариф?
+        </h2>
+
+        <p class="form-text">
+            Если вы уже выбрали подходящий тариф или у вас есть вопросы - оставьте ваши данные. Мы перезвоним вам
+        </p>
+
+
+        <div class="form-data">
+            <label>
+                <input id="tariff-email-input" placeholder="Введите ваш e-mail"/>
+            </label>
+
+            <div id="tariff-error-text-email" style="display: none;">Пожалуйста, введите корректный e-mail</div>
+
+            <label>
+                <input id="tariff-phone-input" placeholder="+7 ___ ___ __ - __"/>
+            </label>
+
+            <div id="tariff-error-text" style="display: none;">Пожалуйста, введите номер телефона</div>
+
+
+            <textarea name="text"></textarea>
+        </div>
+
+        <a class="form-item-btn" href="#" onclick="submitFormTariff(event)">Отправить запрос</a>
+
+        <a href="#" class="tariff-agreement">Нажимая кнопку, вы соглашаетесь на
+            <span>обработку персональных данных</span></a>
+
+        <p class="tariff-success-message">Спасибо, ваша заявка успешно отправлена</p>
+    </div>
+</div>
+
+<div id="formContainerReviews" class="form-container">
+    <div class="form-item">
+
+        <img onclick="openOrCloseForm('formContainerReviews')" class="icon-close" alt="" src="icons/x.png">
+
+
+        <h2 class="form-title">
+            Вы Хотели бы оставить отзыв о нас?
+        </h2>
+
+        <p class="form-text">
+            Если вам есть, что сказать о нас- вы можете оставить свой отзыв в окне ниже
+        </p>
+
+
+        <div class="form-data">
+            <label>
+                <input id="reviews-email-input" placeholder="Введите ваш e-mail"/>
+            </label>
+
+            <div id="reviews-error-text-email" style="display: none;">Пожалуйста, введите корректный e-mail</div>
+
+            <label>
+                <input id="reviews-phone-input" placeholder="+7 ___ ___ __ - __"/>
+            </label>
+
+            <div id="reviews-error-text" style="display: none;">Пожалуйста, введите номер телефона</div>
+
+
+            <textarea name="text"></textarea>
+        </div>
+
+        <a class="form-item-btn" href="#" onclick="submitFormReviews(event)">Отправить запрос</a>
+
+        <a href="#" class="reviews-agreement">Нажимая кнопку, вы соглашаетесь на
+            <span>обработку персональных данных</span></a>
+
+        <p class="reviews-success-message">Спасибо, ваша заявка успешно отправлена</p>
+    </div>
+</div>
+
+
+<div id="overlay" class="overlay"></div>
+<!-- jquery -->
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
+
+<!-- slick -->
+<script src="slicklick.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- scripts -->
+<script src="scripts/forms.js"></script>
+<script src="scripts/script.js"></script>
+<script src="scripts/count-block.js"></script>
+<script src="scripts/menu.js"></script>
+<script src="scripts/sliders.js"></script>
+<script src="scripts/reviews.js"></script>
+
+</body>
+</html>
